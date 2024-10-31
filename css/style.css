@@ -137,12 +137,12 @@ form {
     background-color: #F2F2F2;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 .icon {
-    flex: 1;
+    flex: 1;    
     min-width: 50px;
-    text-align: center;
 }
 
 .lieu {
@@ -159,7 +159,7 @@ form {
 }
 
 .bleu {
-    flex: 4;
+    flex: 3;    
     height: 100%;
     border: none;
     outline: none;
@@ -167,9 +167,15 @@ form {
     background-color: #0065FC;
     border-radius: 0 20px 20px 0;
     color: #ffffff;
-    font-size: 1.2em;
-    font-weight: 600;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.bleu2 {
+    font-weight: 600;
 }
 
 .bleu .fa-search {
@@ -185,7 +191,7 @@ form {
 }
 
 @media (max-width: 767.98px) {
-    .bleu span {
+    .bleu .bleu2 {
         display: none;
     }
     .bleu .fa-search {
@@ -201,6 +207,15 @@ input::placeholder {
 
 input:focus::placeholder {
     color: transparent;
+}
+
+/* filtres */
+
+.filtres {
+    display: flex;
+    width: 150px;
+    height: 20px;
+    margin: 50px;
 }
 
 /****** Hebergements And Populaires ***********/
