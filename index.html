@@ -19,31 +19,32 @@
 
         <header>
             <img src="/images/logo/Booki.png" alt="logo Booki" class="logo">
-            <ul>
-                <li>
-                    <a href="#"><span class="hover-bar"></span>Hébergements</a>
-                </li>
-                <li>
-                    <a href="#"><span class="hover-bar"></span>Activités</a>
-                </li>
-            </ul>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="#heblink"><span class="hover-bar"></span>Hébergements</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="hover-bar"></span>Activités</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <main>
 
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
+            <p class="p1">Trouvez votre hébergement pour des vacances de rêve</p>
+            <p class="p2">En plein centre-ville ou en pleine nature</p>
 
             <form action="#" method="get">
-                <div class="icon">
-                    <i class="fa-solid fa-location-dot fa-lg" style="color: #000000;"></i>
-
+                <div class="form1">
+                    <i class="fa-solid fa-location-dot fa-lg"></i>
                 </div>
-                    <input type="text" class="lieu" name="lieu" placeholder="Marseille, France">
-                    <button type="submit" class="bleu" name="bleu" value="Rechercher">
-                        <p class="bleu2">Rechercher</p>
-                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
-                    </button>
+                <input type="text" class="form2" name="lieu" placeholder="Marseille, France" maxlength="15">
+                <button type="submit" class="form3" name="bleu" value="Rechercher">
+                    <p>Rechercher</p>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </form>
 
             <div class="filtres"> 
@@ -62,9 +63,34 @@
                 </button>
             </div>
 
+                <p class="p3"><i class="fa-solid fa-info fa-xs"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-
+                    <div class="hebergements-title">
+                        <h1 class="section-title" id="heblink">Hébergements à Marseille</h1>
+                    </div>
+                    <div class="hebergements-cards">
+                        <a href="#">
+                            <article class="card">
+                                <img src="/images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h4 class="card-title">Hôtel du port</h4>
+                                        <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
