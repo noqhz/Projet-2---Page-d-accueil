@@ -67,29 +67,29 @@ header {
     margin-bottom: 70px;
 }
 
-.logo {
+header .logo {
     height: 25px;
     align-self: center;
 }
 
-ul {
+header ul {
     display: flex;
     list-style-type: none; /* puces liste */
     padding: 0;
     margin: 0;
 }
 
-li {
+header li {
     position: relative;
     text-decoration: none;
     margin-right: 70px; /* espace entre li */
   }
 
-li:hover {
+header li:hover {
     color: #0065FC;
   }
   
-.hover-bar {
+header .hover-bar {
     position: absolute;
     top: -15px;
     left: 0;
@@ -99,7 +99,7 @@ li:hover {
     display: none; /* masque la barre par défaut */
   }
   
-li:hover .hover-bar {
+header li:hover .hover-bar {
     display: block; /* affiche la barre au survol */
   }
 
@@ -475,6 +475,29 @@ input:focus::placeholder {
 .activites-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
+}
+
+/* footer */
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    padding: 0 20px 0 20px;
+}
+
+footer .foot {
+    flex-grow: 1;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer li {
+    padding-bottom: 10px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
